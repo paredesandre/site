@@ -1,0 +1,195 @@
+head {
+
+     background-color: rgb(170, 164, 190);
+     font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-image:url("logo2.png");
+    background-repeat: no-repeat;
+    background-size:auto;
+    
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    margin: 5px;
+    color:#E5E9EC;
+ 
+}
+label {
+  color:#fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+   
+  width: 200 px;
+  height: 10px;
+  
+
+}
+
+
+footer {
+	
+	color: #fff;
+	padding: 1px;
+	text-align:inherit;
+	margin-top: 1px;
+    position:relative;
+    bottom: -550px;
+    justify-content: space-between;
+
+}
+.rodape{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    padding:10px;
+}
+.p {
+    text-align:center;
+    color :blue;
+} 
+
+
+.whats_img {
+  float: right;
+
+}  
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 30px;
+    padding:auto;
+    margin: 2px;
+
+    
+}
+.navbar_menu {
+    display: flex;
+    justify-content:space-between;
+    align-items:left;
+    background-color:#E5E9EC;
+    height: 30px;
+    
+
+    
+}
+.navbar_menu_footer {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#333;
+    height: 60px;
+    
+    
+    
+}
+.botao{
+    border: solid 1px blue;
+    border-radius: 30px;
+    color: rgb(255, 153, 0);
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    font-size: large;
+}
+.botao:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.01)
+}
+.botao1{
+    border: solid 1px blue;
+    border-radius: 30px;
+    color: rgb(255, 153, 0);
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    font-size: medium;
+    margin-top: 0px;
+    
+    
+}
+.botao1:hover{
+    background-color:beige; 
+    color: white;
+    transform: scale(1.01)
+}
+
+
+
+.caixa {
+    display: flex; /* Torna o container um flexbox */
+    width: 100%;  /* Largura do container */
+    align-items: center;
+      
+    }
+
+
+.grid-container {
+  margin-top:  20px;  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 2 colunas de igual tamanho (1fr) */
+  gap: 10px; /* Adiciona um espaçamento entre as colunas */
+  
+}
+
+.grid-container1 {
+  margin-top:  10px;  
+  margin:10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Cria 2 colunas de igual tamanho (1fr) */
+  gap: 5px; /* Adiciona um espaçamento entre as colunas */
+  
+}
+
+.grid-item {
+  color:burlywood;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  
+  border-radius: 20px;
+}
+.grid-item1 {
+  
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color:#0F1822;   
+  font-size: 25px;
+  text-align: justify;
+  color:#fff;
+
+}
+.grid-item2 {
+  
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+    
+  font-size: 40px;
+  text-align:left;
+  color:#0F1822;
+
+}
+input {
+  width: 350px;
+  height: 20px;
+  font-size: 16px;
+  background-color:beige;
+  border-radius: 20px;
+  
+}
+.input_assunto {
+  width: 350px;
+  height: 20px;
+  font-size: 25px;
+
+  
+  
+}

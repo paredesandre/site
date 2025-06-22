@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+
+  
+  
+   <nav class="navbar">
+ 
+   <div>
+    Diversos <b>Setores</b> já transformaram suas <b>Operações </b> 
+          
+   </div>
+   
+   
+   <div> 
+
+    <a href="automacao.html"><button class="botao">Veja Nossas Soluções</button></a>
+    </div>
+
+    <div>
+		      <a href="formulario.html"><button class="botao">Saiba Mais</button></a>	     
+    </div>
+    <div> 
+
+    <a href="index.html"><button class="botao">Voltar</button></a>
+    </div>
+     <div class="whats_img">
+
+         <p><a href="https://whatsa.me/5541997337026/?t=Obrigado%20por%20entrar%20em%20Contato%20com%20JFC%20-%20Consultoria">
+             <img  src="whats.png"  >
+          </a>
+         </p>
+        
+ </div> 
+</nav>
+
+  <div class="grid-container1 ">
+    <form method="POST" action="/processar" method="post">
+      
+  
+        {{ form.csrf_token }}
+   <div class="grid-item"> Fale com um Especialista</div>     
+   <div class="grid-item2" >
+        {{ form.email.label }} 
+        {{ form.email}} 
+        
+        {{ form.username.label }} 
+        {{ form.username}} 
+
+       {{ form.fone.label}}
+        <input type="number"  id="fone" name="fone"  {{form.fone}} ><br>
+        {{ form.assunto.label }} <br>
+   
+        <textarea id="assunto" name="assunto" rows="16" cols="142" style="font-size: 16px;border-radius: 10px;">{{form.Assunto}}</textarea>
+        
+        
+    
+        
+         
+        
+   </div>
+   <button CLASS="botao1" > {{ form.botao_Enviar }} </button>
+ </form>
+      
+ </div>
+     
+   
+
+
+
+<nav  class="rodape" >
+       
+		
+          <div>
+            E-mail: contato@jfctech.com.br 
+          </div>
+      <ul>
+        <div>
+		       Whatsapp : +55-(41) 99733-7026 	     
+        </div>
+       
+		</ul>
+	</nav>
+
+ 

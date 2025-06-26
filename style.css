@@ -1,0 +1,166 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  
+}
+
+/* Aula Flexbox */
+body {
+  margin: 0;
+  padding: 0; 
+  font-size: 20px; 
+  background-color:#FFFFFF ;
+  background-image: url("teste.jpeg");
+  background: no-repeat;
+  
+  
+}
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 0 16px #2A3238;
+  border-radius: 30px;
+  
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+header {
+   background-color:#E5E9EC;
+}
+
+a {
+  color:blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  
+
+}
+
+img { 
+  display: flex;
+
+}
+.nav_titulo {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 15px 30px;
+  box-shadow: 0 0 16px #2A3238;
+  border-radius: 30px;
+  
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.botao{
+   border:silver;
+    border-radius: 30px; 
+   color: rgb(255, 153, 0); 
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    font-size: larger;
+}
+.botao:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.01)
+}
+/* Aula Grid */
+
+.grid {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+  gap: 10px;
+  
+}
+
+
+
+/* Aula de Responsividade */
+
+main {
+  padding: 10px 10px;
+  display: flex;
+  justify-content:center;
+}
+
+@media (max-width: 1280px) {
+  main {
+    padding: 30px 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 990px) {
+  main {
+    padding: 20px;
+  }
+  
+img {
+  margin-top: 0;
+  width: 50;
+
+}
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+  
+     margin:50px;
+     width: 20px;
+     height: 20px;
+  
+  }
+
+  ul {
+    gap: 8px;
+    
+  }
+
+  nav {
+    padding: 10px 15px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+  h1 {
+    text-align: center;
+  }
+}

@@ -1,91 +1,72 @@
 
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JFC - Consultoria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <header>
+     <nav class="nav_titulo">
+    <ul>
+
+          <h1> JFC  Tecnologia - Inove com Agilidade & Eficiencia </h1> 
+
+        <div class="p"> Falamos com Você </div>
+            
       
- <title>
-    JFC  - Tecnologia 
-</title>
-<link rel="stylesheet"  href="styles.css"> 
+      </ul>
+     </nav>
+    </header>
 
-
-</head>
-
-  
-   <nav class="navbar">
- 
-   <div>
-    Diversos <b>Setores</b> já transformaram suas <b>Operações </b> 
-          
-   </div>
-   
-   
-   <div> 
-
-    <a href="automacao.html"><button class="botao">Veja Nossas Soluções</button></a>
-    </div>
-
-    <div>
-		      <a href="formulario.html"><button class="botao">Saiba Mais</button></a>	     
-    </div>
-    <div> 
-
-    <a href="index.html"><button class="botao">Voltar</button></a>
-    </div>
-     <div class="whats_img">
-
-         <p><a href="https://whatsa.me/5541997337026/?t=Obrigado%20por%20entrar%20em%20Contato%20com%20JFC%20-%20Consultoria">
-             <img  src="whats.png"  >
-          </a>
-         </p>
-        
- </div> 
-</nav>
-
-  <div class="grid-container1 ">
-    <form method="POST" action="/processar" method="post">
+    <!-- Seção Principal -->
+    <main>
       
-  
-  
-   <div class="grid-item"> Fale com um Especialista</div>     
-   <div class="grid-item2" >
-        <label> E-mail:</label>
-        <input id="email" name="email" rows="10" cols="20" ></input>
-        <label> Nome: :</label>
-        <input id="username" name="username" rows="10" cols="20" > </input>
-        <label> Fone :</label>       
-        <input type="number"  id="fone" name="fone"  ></input><br>
-        <label> Assunto :</label> <br>
+      <nav>
+        <a href="quem.html"><button class="botao">Quem Somos</button>
+        <a href="automacao.html"><button class="botao">Nossas Soluções</button></a><br>
+        <a href="index.html"><button class="botao">Home</button></a><br>
+
+        
+      </nav>
+    </main>
+        <div class="grid-container ">
+            <form method="POST" action="url('index.html')" >
+       
+                
+              
+                <label> E-mail:</label><br>
+                <input id="email" name="email" rows="10" cols="20" ></input><br>
+                <label> Nome: :</label><br>
+                <input id="username" name="username" rows="10" cols="20" > </input><br>
+                <label> Fone :</label><br>       
+                <input type="number"  id="fone" name="fone"  ></input><br>
+                <label> Assunto :</label> <br>
    
-        <textarea id="assunto" name="assunto" rows="16" cols="142" style="font-size: 16px;border-radius: 10px;"></textarea>
+                <textarea id="assunto" name="assunto" rows="10" cols="45" style="font-size: 16px;border-radius: 10px;"></textarea><br>
         
-        
+            
+              
+              <a href="index.html" class="botao1"> Enviar </a>
+            </form>
+      
+        </div>    
+
     
-        
-         
-        
-   </div>
-   <button CLASS="botao1" > {{ form.botao_Enviar }} </button>
- </form>
-      
- </div>
-     
-   
-
-
-
-<nav  class="rodape" >
        
-		
-          <div>
-            E-mail: contato@jfctech.com.br 
-          </div>
+   <footer>
+    
       <ul>
-        <div>
-		       Whatsapp : +55-(41) 99733-7026 	     
-        </div>
-       
-		</ul>
-	</nav>
-
+       <a href="jfctech.devl@jfctech.com">E-mail:jfctech.dev@jfctech.com.br</a>
+      
+       <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5541997337026/?t=Obrigado%20por%20entrar%20em%20Contato%20
+                 com%20JFC%20-%20Consultoria"></script>
+      </ul>
+    
+   </footer>
+  </body>
  
+</html>

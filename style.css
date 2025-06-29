@@ -70,7 +70,7 @@ a {
 
 footer{
      background-color:#E5E9EC;
-     color:#FFFFFF;
+     color:#0F1822 ;
      font-size: 25px;
      font-family: Arial, Helvetica, sans-serif;
      font-weight: 400;
@@ -88,6 +88,32 @@ img {
   margin-bottom: auto;
   
 }
+
+label {
+  color:black;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 200 px;
+  height: 16px;
+  margin-left: 400px;
+}
+
+input {
+  width: 350px;
+  height: 20px;
+  font-size: 16px;
+  background-color:beige;
+  border-radius: 20px;
+  margin-left: 400px;
+  
+}
+textarea {
+  margin-left: 400px;
+  background-color:beige;
+
+}
+
 .p {
     text-align:center;
     color :blue;
@@ -121,16 +147,16 @@ img {
 }
 
 .botao1{
-    border: solid 0px blue;
-    border-radius: 30px;
-    color: rgb(255, 153, 0);
-    background-color:#E5E9EC;
+    margin-left: 400px;
+    border:silver;
+    border-radius: 30px; 
+    color:blue;
+    background-color: white;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-    font-size: medium;
-    margin-top: 0px;
-    
-    
+    font-size: larger;
 }
+    
+
 .botao1:hover{
     background-color:blue; 
     color: white;
@@ -150,7 +176,7 @@ img {
 .grid-container {
   margin-top: 15px;  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+  grid-template-columns: repeat(auto-fit, minmax(155px, 3fr));
  /* grid-template-columns: repeat(3, 1fr); /* Cria 2 colunas de igual tamanho (1fr) */
   gap: 10px; /* Adiciona um espaçamento entre as colunas */
   
@@ -196,23 +222,66 @@ main {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+    label {
+    margin-left: 400px;
+  }
+
+   input{
+    margin-left: 400px;
+  }
+  textarea{
+    margin-left: 400px;
+  }
+   .botao1{
+    margin-left: 400px;
+  }
+
 }
 
 @media (max-width: 990px) {
   main {
     padding: 20px;
   }
+ 
   
 img {
   margin-top: 0;
   width: 50;
 
 }
+  label {
+    margin-left: 200px;
+  }
+
+   input{
+    margin-left: 200px;
+  }
+  textarea{
+    margin-left: 200px;
+  }
+   .botao1{
+    margin-left: 200px;
+  }
+
 }
 
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+    label {
+    margin-left: 5px;
+  }
+
+  input{
+    margin-left: 5px;
+  }
+   
+  textarea{
+    margin-left: 5px;
+  }
+  .botao1{
+    margin-left: 5px;
   }
 }
 
@@ -220,6 +289,20 @@ img {
   .grid {
     grid-template-columns: 1fr;
   }
+    label {
+    margin-left: 5px;
+  }
+
+   input{
+    margin-left: 5px;
+  }
+  textarea{
+    margin-left: 5px;
+  }
+   .botao1{
+    margin-left: 5px;
+  }
+
 
   .logo {
   

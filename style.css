@@ -90,7 +90,7 @@ img {
 }
 
 label {
-  color:black;
+  color:#2A3238 ;
   font-family: Arial, sans-serif;
   font-size: 16px;
   text-align: center;
@@ -100,11 +100,12 @@ label {
 }
 
 input {
-  width: 350px;
-  height: 20px;
+  width: 400px;
+  height: 30px;
   font-size: 16px;
   background-color:beige;
-  border-radius: 20px;
+  border-radius: 10px;
+  border-width: 1px;
   margin-left: 400px;
   
 }
@@ -168,7 +169,7 @@ textarea {
 .grid {
   max-width: 1600px;
   display: grid;
-  grid-template-columns: repeat(1fr 1fr 1fr);
+  grid-template-columns: repeat(1fr 1fr);
   gap: 10px;
   
 }
@@ -176,13 +177,13 @@ textarea {
 .grid-container {
   margin-top: 15px;  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(155px, 3fr));
+  grid-template-columns: repeat(auto-fit, minmax(155px, 2fr));
  /* grid-template-columns: repeat(3, 1fr); /* Cria 2 colunas de igual tamanho (1fr) */
   gap: 10px; /* Adiciona um espaçamento entre as colunas */
   
 }
 .grid-item {
-  color:#2A3238;
+  color:#2A3238 ;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   padding: 10px;
@@ -220,7 +221,7 @@ main {
   }
 
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
     label {
     margin-left: 400px;
@@ -267,7 +268,7 @@ img {
 
 @media (max-width: 800px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
     label {
     margin-left: 5px;

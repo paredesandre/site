@@ -28,7 +28,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  box-shadow: 0 0 16px 
+  box-shadow: 0 0 16px #2A3238;
   border-radius: 30px;
   
   gap: 10px;
@@ -222,7 +222,12 @@ main {
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  
+    
   }
+  
+
+  
     label {
     margin-left: 400px;
   }

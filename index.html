@@ -1,67 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JFC - Consultoria</title>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/bootstrap.css">
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="icon" type="image/jpg" ref="static/img/logo_marca_icone.jpg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1
+                                 /font/bootstrap-icons.min.css">
+
+
+    <title>JFC - Consultoria</title>
+</head>
+<body>
    
-    <header>
-     <nav class="nav_titulo">
-    <ul>
-        <!-- <a ref=" " > -->
-           <img 
-          src="logo_marca_icone.jpg"
-          alt="Imagem do Blog"  
-          />
-          <h1> JFC  Tecnologia - Inove com Agilidade & Eficiência </h1> 
-
-        <a href="index.html" style="font-size: larger; color:brown">Login</a> 
-        
-        
+    <i class="bi bi-list  menu-mobile"></i>
+    <aside class="header">
+        <section class="profile">
+            <img src="static/img/logo_marca.jpg" alt="Logo JFCtech">
             
-      
-      </ul>
-     </nav>
-    </header>
+            <h1>JFC - Consultoria</h1>
+            <div class="social-links mt-4 text-center">
 
-    <!-- Seção Principal -->
-    <main>
-      
-      <nav>
-        <a href="quem.html"><button class="botao">Quem Somos</button>
-        <a href="automacao.html"><button class="botao">Nossas Soluções</button></a><br>
+                <a target="_blank" href="https://www.instagram.com/jfctechconsultoria/"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="#"><i class="bi bi-facebook"></i></a>
+                <a target="_blank" href="#"><i class="bi bi-file-play"></i></a>
+                <a target="_blank" href="https://whatsa.me/5541997075434/?t=Olá%20Sou%20Conrado%20Como%20Posso%20
+                 Ájuda%20-%20lo?%20Em%20Breve%20Vamos%20Atende%20-%20lo"><i class="bi bi-whatsapp"></i></a>
+                
+            </div>
+
+        </section>
+        <nav id="navbar" class="nav-menu">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house"
+                         aria-hidden="true"> Lar</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre"> <i class="bi bi-kanban" aria-hidden="true"></i> Sobre</a>
+                </li>
+                                
+                <li class="nav-item">
+                        <a class="nav-link" href="#produtos"><i class="bi bi-union"
+                           aria-hidden="true"></i> O Que Fazemos</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#itens"><i class="bi bi-check2"
+                           aria-hidden="true"></i> Portifólio</a>
+                </li>
+                 <li class="nav-item">
+                        <a class="nav-link" href="#parcerias"><i class="bi bi-transparency"
+                           aria-hidden="true"></i> Parcerias</a>
+                </li>
+                 
+               
+  
+            </ul>
+        </nav>
+    </aside>
+    <main id="main">
+        <section id="inicio" class="row m-0 p-0">
+            <div clas="col-md-5 d-flex justify-content-center align-items-center flex-column "  > 
+                <h2 class="text-info text-shadow ">JFC - Consultoria</h2> 
+                
+                <span id="subtitle" class="text-white text-shadow ">Tecnologia que Impulsiona Resultados Reais  </span>
+                <h3 class="text-white text-shadow text-justify"> Transforme processos, inove com agilidade e tome decisões mais inteligentes
+                    para crescer seu produto e seu negócio. </h3>
+                <h4 class="text-white text-shadow text-justify mt-3"><em> Vamos juntos transformar sua empresa com tecnologia? 
+                   Fale com nossos especialistas e descubra como nossas soluções podem gerar impacto real no seu negócio. 
+                </em></h4>    
+               
+            </div>
+
+            <div class="col-md-7 d-flex justify-content-end align-items-end">
+                <div id="arraste" class="d-flex align-items-center">
+                  <i class="bi bi-arrow-down pe-2 fs-2 text-white"></i>
+                  <a href="sobre">Arraste para mais</a>
+               </div>
+            </div>
+        </section>
+        <section  class="container mt-5" id="sobre">
+          <div class="col-md-12" data-anime="down">
+          
+            <div class="row w-100%">
+
+              <div class="col-md-12" data-anime="down">
+                <h2 class="pt-3 mt-5" id="sobre"> Sobre</h2>
+                <p  style="text-align: center; color: blue; font-size: 20px; " ><em><strongt> Nossa Missão</strong></em></p><br>
+                <p  style="text-align: justify;">Nossa missão é <strong>otimizar o uso, armazenamento, processamento e compartilhamento
+                   de informações</strong>, utilizando recursos computacionais de ponta. Essencialmente, a
+                    <strong>Tecnologia da Informação (TI) </strong> visa fornecer ferramentas e infraestruturas 
+                     indispensáveis para que dados sejam gerados, gerenciados, protegidos e utilizados
+                    de forma eficiente e eficaz por organizações e indivíduos em diversos setores.</p>
+ 
+              </div>
 
         
-      </nav>
-      <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5541997075434/?t=Olá%20Sou%20Conrado%20Como%20Posso%20
-                 Ájuda%20-%20lo?%20Em%20Breve%20Vamos%20Atende%20-%20lo"></script>
-    </main>
-    <div >
-     <img 
-          src="logo_marca.jpg"
-          alt="Imagem do Blog"  
-          />
-    
+              <div class="col-md-12" data-anime="rigth">
+               <p style="text-align: center; color: blue; font-size: 20px;"><em><strongt> Nosso Objetivo</strong></em></p><br>
+               <p style="text-align: justify;">Visamos  <strong> aprimorar a eficiência operacional e a produtividade de nossos clientes </strong>,
+                  implementando soluções tecnológicas que automatizam processos, otimizam a gestão de informações e 
+                  reduzem custos. Buscamos <strong>a competitividade de mercado</strong> ao oferecer ferramentas que
+                  permitem aos nossos clientes se destacar e alcançar seus objetivos de negócio. Nosso compromisso 
+                  <strong>é atender às necessidades específicas de cada cliente</strong>, desenvolvendo produtos e serviços
+                  sob medida para garantir sua total satisfação e fidelização.</p>
+              </div>
 
-    </div>
-       
-   <footer>
-    
-      <ul>
-       <a href="index.html">E-mail:jfctech.adm@gmail.com</a> 
-       <a href="https://www.instagram.com/jfctechconsultoria/">
-          <img src="insta.png" alt="Descrição da imagem">
-       </a>
-      
+            </div>      
+        </section>
+        
+        <section  class="container mt-5 section-bg" id="produtos">
+          <div class="col-md-12" data-anime="down">
           
-      
-       
-      </ul>
-    
-   </footer>
-  </body>
- 
+            <div class="row w-100% ">
+
+              <div class="col-md-12" data-anime="down">
+                <h2 class="pt-3 mt-5" id="produtos"> Nossas Soluções</h2>
+                 
+                
+              </div>
+              <div class="card mb-3" style="max-width: 1000px;"data-anime="left" >
+                  <div class="row g-0 w-100%">
+                     <div class="col-md-6 mt-4">
+                     <img src="static/img/automacao.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-shadow-produtos">Automação de Processo</h5>
+                      <h6 style="text-align:center; color:blue; margin: 10px;">Automação para fazer 
+                        mais, com menos esforço</h6>
+                      <p class="card-text" style="text-align: justify;"> Implemente a <strong>automação para otimizar tarefas rotineiras</strong>, mitigar a probabilidade de erros
+                         e impulsionar a produtividade de sua equipe.<strong>Benefícios Estratégicos:</strong>
+                         • Alocação de tempo e recursos para iniciativas de caráter estratégico,
+                         • Diminuição substancial de custos operacionais.
+                         • Aprimoramento contínuo da satisfação e experiência do cliente.
+                         • Adoção da Automação Robótica de Processos (RPA) para elevar os níveis 
+                            de eficiência em toda a organização.<br>
+                            Libere sua equipe para o que realmente importa.  <strong style="color: #00C2FF ;
+                             font-size: 18px;">Saiba Mais</strong></p>
+                     </div>
+                  </div>
+               </div>
+          </div>
+          <div class="card mb-3" style="max-width: 1000px;" data-anime="down">
+                  <div class="row g-0 w-100%">
+                     <div class="col-md-6 mt-4">
+                     <img src="static/img/analises.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+              <div class="col-md-6">
+                   <div class="card-body">
+                      <h5 class="card-title text-center text-shadow-produtos">Análise e Inteligência de Dados</h5>
+                      <h6 style="text-align:center; color:blue; margin: 10px;">Aproveite o potencial dos seus dados 
+                        para prever tendências. </h6>
+                      <p claa="card-text" style="text-align: justify;">Aproveite ao máximo seus dados para prever cenários<strong>,
+                        aprimorar a eficiência dos processos</strong> e revelar oportunidades inexploradas.
+                        <strong> Benefícios:</strong></p>
+                        <p style="text-align: justify;">• Antecipação de dinâmicas de mercado.
+                        • Otimização abrangente de operações.• Descoberta de insights estratégicos acionáveis.
+                        • Metodologias Aplicadas: Regressão, Clustering, Análise de Séries Temporais, entre 
+                        outras técnicas avançadas.<br>
+                         Transforme dados em decisões estratégicas com análises avançadas.
+                         <strong style="color:#00c2ff; font-size: 18px;">Saiba Mais</strong></p>
+                    </div>
+                   </div>
+               </div>
+           </div>
+            <div class="card mb-3" style="max-width: 1000px;" data-anime="left">
+                 <div class="row g-0">
+                      <div class="col-md-4 mt-2">
+                           <img src="static/img/projeto.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                           <h5 class="card-title text-center text-shadow-produtos">Soluções e Inteligência de Dados</h5>
+                            <h6 style="text-align:center; color:blue; margin: 10px;">
+                               De sistemas robustos a apps intuitivos, entregamos tecnologia que conecta
+                                e gera valor. </h6>
+
+                           <p class="card-text" style="text-align: justify;"> Desenvolvemos plataformas digitais, desde sistemas corporativos
+                               robustos até aplicativos móveis intuitivos. Nosso objetivo é entregar tecnologia que 
+                               promova conectividade e agregue valor significativo ao seu negócio.<br>
+                               • Desenvolvimento de Sistemas Web e Desktop ,• Criação de Aplicativos para as 
+                               plataformas Android e iOS,• Integrações de Sistemas via APIs,• Serviços de Suporte Técnico para
+                               Protheus, desenvolvimento em </em> Advpl</em>, • Gestão e Administração de Banco de Dados
+                               e • Consultoria Estratégica em Tecnologia da Informação.<br>
+                              Soluções digitais sob medida para transformar suas ideias em realidade. 
+                              <strong style="color:#00c2ff; font-size: 18px;">Saiba Mais</strong></p>
+                         </div>
+                   </div>
+             </div>
+            </div>
+          </div>
+        </section>
+         <section  class="container mt-5" id="itens">
+            <div class="col-md-12" data-anime="down">
+                <h2 class="pt-3 mt-5" id="itens">Portifólio</h2>
+                 
+                
+              </div>
+                     <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" 
+                     aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active" data-bs-interval="10000">
+                   <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                             <img src="static/img/pcp.png" class="card-img-top" alt="...">
+                                             <div class="card-body">
+                                             <h5 class="card-title text-center text-info">
+                                               Planejamento & Controle de Produção</h5>
+                                               <p class="card-text" style="border-top: 1px solid black;">
+                                                       Análise de Compra de Materiais.<br>                                                                          
+                                                       Mnutenção Preventiva e Corretiva.<br>
+                                                       Mapa de Produção.<br>
+                                                       Lógistica da Produção.<br>
+                                                       Outras Ferramentas.</p>
+                                           </div>
+                                        </div>
+                                     </div>
+                                     <div class="col">
+                                          <div class="card">
+                                             <img src="static/img/custos.jpeg" class="card-img-top" alt="...">
+                                             <div class="card-body">
+                                                <h5 class="card-title text-center text-info" >
+                                                     Planejamento & COntrole de Custos</h5>
+                                                     <p class="card-text" style="border-top: 1px solid black;"> 
+                                                         Análise de Custos Váriaveis.<br>
+                                                         Análise de Custos Fixos.<br>
+                                                         Análise e Precificação.<br>
+                                                         Apuração de Resultados.<br>
+                                                         Outras Ferramentas.</p>
+                                             </div>
+                                          </div>
+                                     </div>
+                                     <div class="col">
+                                           <div class="card">
+                                               <img src="static/img/crm.jpeg" class="card-img-top" alt="...">
+                                               <div class="card-body">
+                                                   <h5 class="card-title text-center text-info">
+                                                       Gestão & Relacionamento com Cliente</h5>
+                                                   <p class="card-text" style="border-top: 1px solid black;"> 
+                                                      Centralizar Informções de Clientes.<br>
+                                                      Automatizar Processos.<br>
+                                                      Melhorar Atendimento do Cliente.<br>
+                                                      Otimizar o Ciclo de Venda.<br>
+                                                      Outras Ferramentas.</p>
+                                              </div>
+                                           </div>
+                                     </div>
+                                </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="2000">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                                      <div class="col">
+                                         <div class="card">
+                                             <img src="static/img/financeiro.jpeg" class="card-img-top" alt="...">
+                                             <div class="card-body">
+                                               <h5 class="card-title text-center text-info">
+                                                Planejamento & Gestão Financeira</h5>
+                                               <p class="card-text" style="border-top: 1px solid black;">
+                                                Gestão de Contas a Pagar e Receber.<br>
+                                                Gestão de Fluxo de Caixa.<br>
+                                                Gestão de Tesouraria.<br>
+                                                Conciliação Bancária.<br>
+                                                Outras Ferramentas.</p>
+                                                   
+                                             </div>
+                                        </div>
+                                     </div>
+                                    <div class="col">
+                                       <div class="card">
+                                          <img src="static/img/export.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <h5 class="card-title text-center text-info">
+                                                   Planejamento & Gestão de Importação e Exportação</h5>
+                                                <p class="card-text" style="border-top:1px solid black ;">
+                                                Gestão de Importação.<br>
+                                                Gestão de Exportação.<br>
+                                                Gestao de Drawback.<br>
+                                                LPCO.<br>
+                                                Outras Ferramentas.</p>
+                                             </div>
+                                       </div>
+                                    </div>
+                                    <div class="col">
+                                       <div class="card">
+                                          <img src="static/img/vendas.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <h5 class="card-title text-center text-info">
+                                                Planejamento & Gestão de Vendas</h5>
+                                                <p class="card-text" style="border-top:1px solid black ;">
+                                                Cadastro de clientes e produtos.<br>
+                                                   Gestão de pedidos.<br>
+                                                   Emissão de documentos fiscais.<br>
+                                                   Análise de vendas.<br>
+                                                   Outras Ferramentas.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                 </div>
+               </div>
+               <div class="carousel-item">
+                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                             <div class="col">
+                                       <div class="card">
+                                          <img src="static/img/orca.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <h5 class="card-title text-center text-info">
+                                                   Planejamento & Gestão Orçamentária</h5>
+                                                <p class="card-text" style="border-top: 1px solid black;">
+                                                   Planejamento Orçamentário.<br>
+                                                   Execução Orçamentária.<br>
+                                                   Controle Orçamentário.<br>
+                                                   Gestão de Créditos.<br>
+                                                   Outras Ferramentas.</p>
+                                                      
+                                             </div>
+                                       </div>
+                             </div>
+                             <div class="col">
+                                       <div class="card">
+                                          <img src="static/img/contab.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <h5 class="card-title text-center text-info">
+                                                   Planejamento & Gestão de Contabil Fiscal</h5>
+                                                <p class="card-text" style="border-top:1px solid black ;">
+                                                   Escrituração .<br>
+                                                   Registros Fiscais.<br>
+                                                   SPEDs.<br>
+                                                   Apuração de Impostos.<br>
+                                                   Outras Ferramentas.</p>
+                                             </div>
+                                       </div>
+                            </div>
+                            <div class="col">
+                                       <div class="card">
+                                          <img src="static/img/online.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <h5 class="card-title text-center text-info">
+                                                Planejamento & Vendas de Produtos Online</h5>
+                                                <p class="card-text" style="border-top:1px solid black ;">
+                                                   Catálogo Online.<br>
+                                                   Carrinho de Compras.<br>
+                                                   Checkout,envio e rastreamento.<br>
+                                                   Formas de Pagamento.<br>
+                                                   Outras Ferramentas.</p>
+                                          </div>
+                                    </div>
+                            </div>
+  
+                  </div>
+                            
+               </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+        
+        <section  class="container mt-0 section-bg" id="parcerias">
+          <div class="col-md-12" data-anime="down">
+          
+            <div class="row w-100% ">
+
+              <div class="col-md-12" data-anime="down">
+                <h2 class="pt-3 mt-5" id="sobre"> Parcerias</h2>
+                
+              </div>
+              <div class="card mb-3 border-0 " style="max-width: 1000px;"data-anime="left" >
+                  <div class="row g-0 w-100%">
+                     <div class="col-md-4 mt-5" >
+                     <img src="static/img/parceria.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-shadow-produtos">Parcerias Estratégicas</h5>
+                      <p style="text-align: justify;">Além dos nossos serviços diretos <strong>, valorizamos e estabelecemos parcerias
+                         estratégicas com outras empresas e fornecedores de tecnologia.</strong> Essa 
+                         abordagem colaborativa nos permite expandir nossa capacidade de entrega, oferecer
+                         soluções mais completas e inovadoras, e garantir que nossos clientes tenham acesso 
+                         ao que há de melhor no mercado de TI. Trabalhamos em conjunto para construir 
+                         ecossistemas tecnológicos que impulsionam o crescimento e a eficiência.</p>
+                     </div>
+                  </div>
+               </div>
+              
+          </div>    
+        </section>
+   
+             
+
+        
+ </main>
+ <footer id="footer">
+    <div class="container">
+       <div class="text-center">
+         &copy; Copyrigth <strong>JFC - Tecnologia </strong>
+       </div>
+    </div>
+
+ </footer>
+     <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5541997075434/?t=Olá%20Sou%20Conrado%20Como%20Posso%20
+                 Ájuda%20-%20lo?%20Em%20Breve%20Vamos%20Atende%20-%20lo"></script>
+    <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/script.js"></script>
+   
+
+</body>
 </html>

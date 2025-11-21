@@ -2,447 +2,634 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="JFCtech Consultoria Tecnologia que Impulsiona Resultados Reais "/>
-    <meta name="keywords" content="Automação,automação,automacao,robotização,Robotização,
-     Aplicativos,Analise de Dados, desenvolvendo app e Sites " />
+    <meta name="description" content="4K Construtora Contruindo qualidade do Solo ao Topo "/>
+    <meta name="keywords" content="Construtora,construção,construçao,pavimento,pavimentação,terraplanagem,
+       piso nivelado,reforma,reforma de telhadas,telhados,reformade casa " />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/bootstrap.css">
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/jpg" ref="static/img/logo_marca_icone.jpg" />
+    <link rel="icon" type="image/jpg" ref="static/img/logo4k.jpg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1
                                  /font/bootstrap-icons.min.css">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-           })(window,document,'script','dataLayer','GTM-KZJJD9FK');</script>
-     <!-- End Google Tag Manager -->
 
-    <title>JFC tech Consulty</title>
+
+  <style>
+    :root{
+      --bg: rgba(136, 39, 39, 0.04); /* deep navy */
+      --card:#0b1220;
+      --muted:#ebe4e4;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.04);
+      --max-width:1200px;
+      --radius:14px;
+      --gap:20px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,rgb(20, 19, 19) 0%,black 60%);color:#e6eef8;line-height:1.5}
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+
+    /* Top bar */
+    header{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(6px);position:sticky;top:0;z-index:40}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:48px;width:auto;border-radius:8px;background:var(--glass);padding:6px}
+    .brand .title{font-weight:700;font-size:18px}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+    nav a:hover{color:var(--accent);background:rgba(110,231,183,0.06)}
+    .cta{background:linear-gradient(90deg,var(--accent),#4dd6a0);color:#052022;padding:8px 14px;border-radius:10px;font-weight:600;border:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:32px;align-items:center;padding:40px 0}
+    .hero h1{font-size:36px;margin:0}
+    .hero p.lead{color:var(--muted);margin-top:12px;font-size:16px}
+    .features{display:flex;flex-direction:column;gap:4px;margin-top:10px}
+    .feature{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:12px;display:flex;gap:12px;align-items:center}
+    .feature h4{margin:0}
+
+    /* Cards for product lines */
+    .lines{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+    .card h3{margin-top:0}
+
+    /* About */
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
+    .panel{background:var(--card);padding:22px;border-radius:12px}
+
+    /* Contact */
+    .grid-forms{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    button.btn{padding:10px 14px;border-radius:10px;border:none;font-weight:700}
+
+    footer{padding:28px 0;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .lines{grid-template-columns:repeat(2,1fr)}
+      .about{grid-template-columns:1fr}
+      .grid-forms{grid-template-columns:1fr}
+      .cookie-banner{ flex-direction: column; align-items: stretch; gap:12px; padding:14px; }
+      .cookie-actions{ justify-content:flex-end; }
+      
+    }
+    @media (max-width:560px){
+      nav{display:none}
+      .topbar{padding:12px}
+      .brand .title{font-size:16px}
+      .lines{grid-template-columns:1fr}
+      .cookie-banner{ flex-direction: column; align-items: stretch; gap:12px; padding:14px; }
+      .cookie-actions{ justify-content:flex-end; }
+            
+    }
+
+    /* Mobile nav button */
+    .hamburger{display:none}
+    @media (max-width:560px){.hamburger{display:block;background-color:beige ;border:2px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px}}
+
+    /* small utilities */
+    .muted{color:var(--muted);text-align: justify;}
+    .pill{display:inline-block;background:rgba(255,255,255,0.03);padding:20px 30px;border-radius:999px;font-size:20px}
+
+    /* Modal */b
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:60}
+    .modal.open{display:flex}
+    .modal .box{background:#071424;padding:20px;border-radius:12px;max-width:420px;width:100%;text-align:center}
+    .faq {
+      background: #fff;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      color:#071424;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+    }
+    .faq-question {
+      background: #e9ecef;
+      cursor: pointer;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover {
+      background: #dee2e6;
+    } 
+    .arrow {
+      transition: transform 0.3s;
+    }
+
+    .arrow.rotate {
+      transform: rotate(90deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      background: #fff;
+      padding: 0 20px;
+    }
+     .faq-answer.open {
+      max-height: 200px;
+      padding: 15px 20px;
+    }
+    .contact-form input{
+    background-color: beige;
+    color:black;
+    width: 100%;
+    padding: 8px 0;
+    margin: 8px 0;
+   }
+        /* Estilos do banner */
+   #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+      }
+
+   .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+     }
+
+     .cookie-text {
+            flex: 1;
+            padding-right: 20px;
+            min-width: 300px;
+      }
+
+     .cookie-buttons {
+            display: flex;
+            gap: 10px;
+      }
+
+        .cookie-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .accept-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .reject-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .settings-btn {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .cookie-link {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+
+    .contact-form input[type=text] {
+        height: 100px;
+    }
+        
+
+
+ </style>
+
+    <title>EnonWeb Soluções Digitais</title>                                 
+
 </head>
-<body>
-   <!-- Google Tag Manager (noscript) -->
-     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZJJD9FK"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-        
-    <i class="bi bi-list  menu-mobile"></i>
-    <aside class="header">
-        <section class="profile">
-            <img src="static/img/logo_marca.jpg" alt="Logo JFCtech">
-            
-            <h1>JFC tech Consulty</h1>
-            <div class="social-links mt-4 text-center">
-
-                <a target="_blank" href="https://www.instagram.com/jfctechconsultoria/"><i class="bi bi-instagram"></i></a>
-                <a target="_blank" href="#"><i class="bi bi-facebook"></i></a>
-                <a target="_blank" href="#"><i class="bi bi-file-play"></i></a>
-                <a target="_blank" href="https://whatsa.me/5541997337026/?t=Olá%20Sou%20André%20Como%20Posso%20
-                 Ájuda%20-%20lo?%20Em%20Breve%20Vamos%20Atende%20-%20lo"><i class="bi bi-whatsapp"></i></a>
-                
-            </div>
-
-        </section>
-        <nav id="navbar" class="nav-menu">
-            <ul class="nav flex-column">
-                 <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" target="_blank"
-                     href="https://joaoandre.pythonanywhere.com/">
-                     <i class="bi bi-door-open"
-                         aria-hidden="true"> Login</i></a>
-                 </li> -->
-                <li class="nav-item">
-                    <a class="nav-link  active" aria-current="page" href="#inicio"><i class="bi bi-house"
-                         aria-hidden="true"> Lar</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre"> <i class="bi bi-kanban" aria-hidden="true"></i> Sobre</a>
-                </li>
-                                
-                <li class="nav-item">
-                        <a class="nav-link" href="#produtos"><i class="bi bi-union"
-                           aria-hidden="true"></i> O Que Fazemos</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#itens"><i class="bi bi-check2"
-                           aria-hidden="true"></i> Portifólio</a>
-                </li>
-                 <li class="nav-item">
-                        <a class="nav-link" href="#parcerias"><i class="bi bi-transparency"
-                           aria-hidden="true"></i> Parcerias</a>
-                </li>
-                 
-               
+<body >
   
-            </ul>
-        </nav>
-    </aside>
-    <main id="main">
-        
-        <section id="inicio" class="row m-0 p-0">
-             
-                     
-            <div clas="col-md-5 d-flex justify-content-center align-items-center flex-column "  > 
-              
-                <h2 class="text-info text-shadow ">JFC tech Consulty</h2> 
-                
-                <span id="subtitle" class="text-white text-shadow ">Tecnologia que Impulsiona Resultados Reais  </span>
-                <h3 class="text-white text-shadow " style="text-align: justify;"> Transforme processos, inove com agilidade e tome decisões mais inteligentes
-                    para crescer seu produto e seu negócio. </h3>
-                <h4 class="text-white text-shadow  mt-3" style="text-align: justify;"><em> Vamos juntos transformar sua empresa com tecnologia? 
-                   Fale com nossos especialistas e descubra como nossas soluções podem gerar impacto real no seu negócio. 
-                </em></h4>    
-               
-            </div>
+<header>
+    <div class="container topbar">
+      <div class="brand" >
+        <!-- Substitua o src por sua logo quando enviar: ex: logo.png -->
+        <img id="brand-logo" src="logo.jpg" alt="Sua Logo (coloque arquivo logo.png)"  />
+        <div>
+          <div class="title">EonWeb Soluções Digitais</div>
+          <div class="muted" style="font-size:12px">Transformamos ideias em produtos digitais</div>
+        </div>
+      </div>
 
-            <div class="col-md-7 d-flex justify-content-end align-items-end">
-                <div id="arraste" class="d-flex align-items-center">
-                  <i class="bi bi-arrow-down pe-2 fs-2 text-white"></i>
-                  <a href="#sobre">Arraste para mais</a>
-               </div>
-            </div>
-        </section>
-        <section  class="container mt-5" id="sobre">
-          <div class="col-md-12" data-anime="down">
-          
-            <div class="row w-100%">
+      <nav aria-label="menu" >
+        <a href="index.html">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Quem somos</a>
+        <a href="contato.html">Contato</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="produtos.pdf" target="_blank">PDF</a>
+        <a href="orcamento.html" class="botao-link"> Solicitar Orçamento </a>
 
-              <div class="col-md-12" data-anime="down">
-                <h2 class="pt-3 mt-5" id="sobre"> Sobre</h2>
-                <p  style="text-align: center; color: blue; font-size: 20px; " ><em><strongt> Nossa Missão</strong></em></p><br>
-                <p>Nossa missão é <strong>otimizar o uso, armazenamento, processamento e compartilhamento
-                   de informações</strong>, utilizando recursos computacionais de ponta. Essencialmente, a
-                    <strong>Tecnologia da Informação (TI) </strong> visa fornecer ferramentas e infraestruturas 
-                     indispensáveis para que dados sejam gerados, gerenciados, protegidos e utilizados
-                    de forma eficiente e eficaz por organizações e indivíduos em diversos setores.</p>
+
+      </nav>
+
+      <button class="hamburger" aria-label="abrir menu" onclick="toggleMobile()">☰</button>
+    </div>
+  </header>
+
+  
+<main class="container">
  
-              </div>
-
-        
-              <div class="col-md-12" data-anime="rigth">
-               <p style="text-align: center; color: blue; font-size: 20px;"><em><strongt> Nosso Objetivo</strong></em></p><br>
-               <p>Visamos  <strong> aprimorar a eficiência operacional e a produtividade de nossos clientes </strong>,
-                  implementando soluções tecnológicas que automatizam processos, otimizam a gestão de informações e 
-                  reduzem custos. Buscamos <strong>a competitividade de mercado</strong> ao oferecer ferramentas que
-                  permitem aos nossos clientes se destacar e alcançar seus objetivos de negócio. Nosso compromisso 
-                  <strong>é atender às necessidades específicas de cada cliente</strong>, desenvolvendo produtos e serviços
-                  sob medida para garantir sua total satisfação e fidelização.</p>
-              </div>
-
-            </div>      
-        </section>
-        
-        <section  class="container mt-5 section-bg" id="produtos">
-          <div class="col-md-12" data-anime="down">
-          
-            <div class="row w-100% ">
-
-              <div class="col-md-12" data-anime="down">
-                <h2 class="pt-3 mt-5" id="produtos"> Nossas Soluções</h2>
-                 
-                
-              </div>
-              <div class="card mb-3" style="max-width: 1000px;"data-anime="left" >
-                  <div class="row g-0 w-100%">
-                     <div class="col-md-6 mt-4">
-                     <img src="static/img/automacao.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title text-center text-shadow-produtos">Automação de Processo</h5>
-                      <h6 style="text-align:center; color:blue; margin: 10px;">Automação para fazer 
-                        mais, com menos esforço</h6>
-                      <p class="card-text" style="text-align: justify;"> Implemente a <strong>automação para otimizar tarefas rotineiras</strong>, mitigar a probabilidade de erros
-                         e impulsionar a produtividade de sua equipe.<strong>Benefícios Estratégicos:</strong>
-                         • Alocação de tempo e recursos para iniciativas de caráter estratégico,
-                         • Diminuição substancial de custos operacionais.
-                         • Aprimoramento contínuo da satisfação e experiência do cliente.
-                         • Adoção da Automação Robótica de Processos (RPA) para elevar os níveis 
-                            de eficiência em toda a organização.<br>
-                            Libere sua equipe para o que realmente importa.  <strong style="color: #00C2FF ;
-                             font-size: 18px;">Saiba Mais</strong></p>
-                     </div>
-                  </div>
-               </div>
-          </div>
-          <div class="card mb-3" style="max-width: 1000px;" data-anime="down">
-                  <div class="row g-0 w-100%">
-                     <div class="col-md-6 mt-4">
-                     <img src="static/img/analises.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-              <div class="col-md-6">
-                   <div class="card-body">
-                      <h5 class="card-title text-center text-shadow-produtos">Análise e Inteligência de Dados</h5>
-                      <h6 style="text-align:center; color:blue; margin: 10px;">Aproveite o potencial dos seus dados 
-                        para prever tendências. </h6>
-                      <p• class="card-text text-jusify">  Aproveite ao máximo jseus dados para 
-                          prever cenários,  aprimorar a<strong> eficiência dos processos</strong> e revelar 
-                          oportunidades inexploradas.</p>
-                      <p  class="card-text" style="text-align: justify;"><strong>• Benefícios:</strong> •
-                         Antecipação de dinâmicas de mercado, • Otimização
-                         abrangente de operações.• Descoberta de insights estratégicos acionáveis,
-                        • Metodologias Aplicadas: Regressão, Clustering, Análise de Séries Temporais, entre 
-                        outras técnicas avançadas.<br>
-                         Transforme dados em decisões estratégicas com análises avançadas.
-                         <strong style="color:#00c2ff; font-size: 18px;">Saiba Mais</strong></p>
-                    </div>
-                   </div>
-               </div>
-           </div>
-            <div class="card mb-3" style="max-width: 1000px;" data-anime="left">
-                 <div class="row g-0">
-                      <div class="col-md-4 mt-2">
-                           <img src="static/img/projeto.jpg" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                           <h5 class="card-title text-center text-shadow-produtos">Soluções e Inteligência de Dados</h5>
-                            <h6 style="text-align:center; color:blue; margin: 10px;">
-                               De sistemas robustos a apps intuitivos, entregamos tecnologia que conecta e gera valor. </h6>
-
-                           <p class="card-text" style="text-align: justify;"> Desenvolvemos plataformas digitais, desde sistemas corporativos
-                               robustos até aplicativos móveis intuitivos. Nosso objetivo é entregar tecnologia que 
-                               promova conectividade e agregue valor significativo ao seu negócio.<br>
-                               • Desenvolvimento de Sistemas Web e Desktop ,• Criação de Aplicativos para as 
-                               plataformas Android e iOS,• Integrações de Sistemas via APIs,• Serviços de Suporte Técnico para
-                               Protheus, desenvolvimento em </em> Advpl</em>, • Gestão e Administração de Banco de Dados
-                               e • Consultoria Estratégica em Tecnologia da Informação.<br>
-                              Soluções digitais sob medida para transformar suas ideias em realidade. 
-                              <strong style="color:#00c2ff; font-size: 18px;">Saiba Mais</strong></p>
-                         </div>
-                   </div>
-             </div>
-            </div>
-          </div>
-        </section>
-         <section  class="container mt-5" id="itens">
-            <div class="col-md-12" data-anime="down">
-                <h2 class="pt-3 mt-5" id="itens">Portifólio</h2>
-                 
-                
-              </div>
-                     <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" 
-                     aria-label="Slide 1"></button>
-               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-               <div class="carousel-item active" data-bs-interval="10000">
-                   <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                             <img src="static/img/pcp.png" class="card-img-top" alt="...">
-                                             <div class="card-body">
-                                             <h5 class="card-title text-center text-info">
-                                               Planejamento & Controle de Produção</h5>
-                                               <p class="card-text" style="border-top: 1px solid black;text-align:center">
-                                                 <b>
-                                                       Análise de Compra de Materiais.<br>                                                                          
-                                                       Manutenção Preventiva e Corretiva.<br>
-                                                       Mapa de Produção.<br>
-                                                       Lógistica da Produção.<br>
-                                                       Outras Ferramentas.</b></p>
-                                           </div>
-                                        </div>
-                                     </div>
-                                     <div class="col">
-                                          <div class="card">
-                                             <img src="static/img/custos.jpeg" class="card-img-top" alt="...">
-                                             <div class="card-body">
-                                                <h5 class="card-title text-center text-info" >
-                                                     Planejamento & Controle de Custos</h5>
-                                                     <p class="card-text" style="border-top: 1px solid black;text-align: center;"> 
-                                                       <b>  Análise de Custos Váriaveis.<br>
-                                                         Análise de Custos Fixos.<br>
-                                                         Análise e Precificação.<br>
-                                                         Apuração de Resultados.<br>
-                                                         Outras Ferramentas.</b></p>
-                                             </div>
-                                          </div>
-                                     </div>
-                                     <div class="col">
-                                           <div class="card">
-                                               <img src="static/img/crm.jpeg" class="card-img-top" alt="...">
-                                               <div class="card-body">
-                                                   <h5 class="card-title text-center text-info">
-                                                       Gestão & Relacionamento com Cliente</h5>
-                                                   <p class="card-text" style="border-top: 1px solid black;text-align: center;"> 
-                                                     <b> Centralizar Informções de Clientes.<br>
-                                                      Automatizar Processos.<br>
-                                                      Melhorar Atendimento do Cliente.<br>
-                                                      Otimizar o Ciclo de Venda.<br>
-                                                      Outras Ferramentas.</b></p>
-                                              </div>
-                                           </div>
-                                     </div>
-                                </div>
-               </div>
-               <div class="carousel-item" data-bs-interval="2000">
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                                      <div class="col">
-                                         <div class="card">
-                                             <img src="static/img/financeiro.jpeg" class="card-img-top" alt="...">
-                                             <div class="card-body">
-                                               <h5 class="card-title text-center text-info">
-                                                Planejamento & Gestão Financeira</h5>
-                                               <p class="card-text" style="border-top: 1px solid black;text-align: center;">
-                                                <b> Gestão de Contas a Pagar e Receber.<br>
-                                                Gestão de Fluxo de Caixa.<br>
-                                                Gestão de Tesouraria.<br>
-                                                Conciliação Bancária.<br>
-                                                Outras Ferramentas.</b></p>
-                                                   
-                                             </div>
-                                        </div>
-                                     </div>
-                                    <div class="col">
-                                       <div class="card">
-                                          <img src="static/img/export.jpeg" class="card-img-top" alt="...">
-                                          <div class="card-body">
-                                                <h5 class="card-title text-center text-info">
-                                                   Planejamento & Gestão de Importação e Exportação</h5>
-                                                <p class="card-text" style="border-top:1px solid black ;text-align: center;">
-                                               <b> Gestão de Importação.<br>
-                                                Gestão de Exportação.<br>
-                                                Gestao de Drawback.<br>
-                                                LPCO.<br>
-                                                Outras Ferramentas.</b></p>
-                                             </div>
-                                       </div>
-                                    </div>
-                                    <div class="col">
-                                       <div class="card">
-                                          <img src="static/img/vendas.jpeg" class="card-img-top" alt="...">
-                                          <div class="card-body">
-                                                <h5 class="card-title text-center text-info">
-                                                Planejamento & Gestão de Vendas</h5>
-                                                <p class="card-text" style="border-top:1px solid black ;text-align: center;">
-                                                   <b>Cadastro de clientes e produtos.<br>
-                                                   Gestão de pedidos.<br>
-                                                   Emissão de documentos fiscais.<br>
-                                                   Análise de vendas.<br>
-                                                   Outras Ferramentas.</b></p>
-                                          </div>
-                                      </div>
-                                  </div>
   
-                                 </div>
-               </div>
-               <div class="carousel-item">
-                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                             <div class="col">
-                                       <div class="card">
-                                          <img src="static/img/orca.jpeg" class="card-img-top" alt="...">
-                                          <div class="card-body">
-                                                <h5 class="card-title text-center text-info">
-                                                   Planejamento & Gestão Orçamentária</h5>
-                                                <p class="card-text" style="border-top: 1px solid black;text-align: center;">
-                                                  <b>  Planejamento Orçamentário.<br>
-                                                   Execução Orçamentária.<br>
-                                                   Controle Orçamentário.<br>
-                                                   Gestão de Créditos.<br>
-                                                   Outras Ferramentas.</b></p>
-                                                      
-                                             </div>
-                                       </div>
-                             </div>
-                             <div class="col">
-                                       <div class="card">
-                                          <img src="static/img/contab.jpeg" class="card-img-top" alt="...">
-                                          <div class="card-body">
-                                                <h5 class="card-title text-center text-info">
-                                                   Planejamento & Gestão de Contabil Fiscal</h5>
-                                                <p class="card-text" style="border-top:1px solid black ;text-align: center;">
-                                                  <b>Escrituração .<br>
-                                                   Registros Fiscais.<br>
-                                                   SPEDs.<br>
-                                                   Apuração de Impostos.<br>
-                                                   Outras Ferramentas.<b></p>
-                                             </div>
-                                       </div>
-                            </div>
-                            <div class="col">
-                                       <div class="card">
-                                          <img src="static/img/online.jpeg" class="card-img-top" alt="...">
-                                          <div class="card-body">
-                                                <h5 class="card-title text-center text-info">
-                                                Planejamento & Vendas de Produtos Online</h5>
-                                                <p class="card-text" style="border-top:1px solid black ;text-align: center;">
-                                                   <b>Catálogo Online.<br>
-                                                   Carrinho de Compras.<br>
-                                                   Checkout,envio e rastreamento.<br>
-                                                   Formas de Pagamento.<br>
-                                                   Outras Ferramentas.</b></p>
-                                          </div>
-                                    </div>
-                            </div>
-  
-                  </div>
-                            
-               </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-        </section>
-        
-        <section  class="container mt-0 section-bg" id="parcerias">
-          <div class="col-md-12" data-anime="down">
-          
-            <div class="row w-100% ">
 
-              <div class="col-md-12" data-anime="down">
-                <h2 class="pt-3 mt-5" id="sobre"> Parcerias</h2>
-                
-              </div>
-              <div class="card mb-3 border-0 " style="max-width: 1000px;"data-anime="left" >
-                  <div class="row g-0 w-100%">
-                     <div class="col-md-4 mt-5" >
-                     <img src="static/img/parceria.jpeg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-center text-shadow-produtos">Parcerias Estratégicas</h5>
-                      <p class="card-text" style="text-align: justify;">Além dos nossos serviços diretos <strong>, valorizamos e estabelecemos parcerias
-                         estratégicas com outras empresas e fornecedores de tecnologia.</strong> Essa 
-                         abordagem colaborativa nos permite expandir nossa capacidade de entrega, oferecer
-                         soluções mais completas e inovadoras, e garantir que nossos clientes tenham acesso 
-                         ao que há de melhor no mercado de TI. Trabalhamos em conjunto para construir 
-                         ecossistemas tecnológicos que impulsionam o crescimento e a eficiência.</p>
-                     </div>
-                  </div>
-               </div>
-              
-          </div>    
-        </section>
+  <section class="hero" id="home">
    
-             
+    <img src="logo_marca.png" width="100%" height="100%" /> 
+      <div>
+        <h1>Tecnologia que impulsiona resultados reais</h1>
+        <p class="lead">Marketing digital, aplicativos, e‑commerce e ERPs, clubes de assinatura e parcerias estratégicas — tudo pensado para escalar seu negócio com tecnologia, design e dados.</p>
 
-        
- </main>
- <footer id="footer">
-    <div class="container">
-       <div class="text-center">
-         &copy; Copyrigth <strong>JFC - Tecnologia </strong>
-       </div>
+        <div class="features">
+          <div class="feature"><strong>Atuação completa</strong><span class="muted"> — do planejamento à entrega</span></div>
+          <div class="feature"><strong>Times especializados</strong><span class="muted"> — marketing, dev, produto e growth</span></div>
+          <div class="feature"><strong>Resultados mensuráveis</strong><span class="muted"> — ROI, CAC, LTV</span></div>
+        </div>
+      </div>
+       <aside style="position:relative">
+        <div style="background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;">
+          <h3 style="margin-top:0">Nossas linhas de produtos</h3>
+          <div class="card" style="margin-bottom:8px">
+            <h4 style="color: #0dcaf0;">Marketing Digital</h4>
+            <p class="muted">Estratégia, tráfego pago, SEO, conteúdo e automações para captar e nutrir leads.</p>
+          </div>
+          <div class="card" style="margin-bottom:8px">
+            <h4 style="color: #0dcaf0 ;">Desenvolvimento & Aplicativos</h4>
+            <p class="muted">Aplicativos móveis, APIs e plataformas com foco em performance e experiência.</p>
+          </div>
+          <div class="card" style="margin-bottom:8px">
+            <h4 style="color: #0dcaf0;">E‑commerce & ERPs</h4>
+            <p class="muted">Lojas integradas, soluções de gestão e integrações com pagamento e logística.</p>
+          </div>
+          <div class="card" style="margin-bottom:8px">
+            <h4 style="color:  #0dcaf0;">Clube de Assinatura</h4>
+            <p class="muted">Modelos de retenção, recorrência e funis específicos para assinaturas.</p>
+          </div>
+          <div class="card">
+            <h4 style="color:  #0dcaf0;">Parcerias</h4>
+            <p class="muted">Programas de parceria estratégica para ampliar alcance e capacidades.</p>
+          </div>
+        </div>
+      </aside>
+  </section>
+  
+  <section id="servicos">
+      <h2>Detalhamento das Linhas</h2>
+      <div class="lines">
+        <div class="card">
+          <h3 style="color:  #0dcaf0;">Marketing Digital</h3>
+          <p class="muted">É o conjunto de estratégias usadas na internet para divulgar produtos, 
+            serviços ou marcas. Ele envolve ações como criar posts nas redes sociais, anunciar no Google,
+             enviar e-mails, produzir conteúdo e usar sites ou aplicativos para atrair e conquistar clientes.
+            Planejamento de marca, campanhas pagas (Google, Meta), marketing de conteúdo, automação e análise de dados.</p>
+        </div>
+        <div class="card">
+          <h3 style="color: #0dcaf0;">Desenvolvimento & Aplicativos</h3>
+          <p class="muted">Desenvolvimento de aplicativos é o processo de criar programas que funcionam
+             em celulares, tablets ou computadores. São aqueles apps que você usa todos os dias — como WhatsApp,
+             Instagram, bancos, jogos e aplicativos de delivery. Desenvolver aplicativos é transformar uma ideia
+             em um app que funciona no celular ou computador, através de design, programação e testes. Desenvolvemos
+             apps nativos e híbridos, plataformas web escaláveis, integrações e manutenção contínua.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:  #0dcaf0">E‑commerce & ERPs</h3>
+          <p class="muted" >O que é E-commerce? E-commerce é uma loja virtual, ou seja, vendas feitas pela
+             internet.É como ter uma loja aberta 24 horas, onde o cliente pode ver produtos, comprar, pagar
+             e receber em casa — tudo online. O que é ERP? É um sistema de gestão que ajuda a organizar toda
+             a empresa em um só lugar. Ele controla estoque, vendas, finanças, notas fiscais, clientes, fornecedores,
+             relatórios e muito mais. Implementamos de lojas virtuais, integração com ERPs, meios de pagamento e soluções 
+             de logística.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:  #0dcaf0;">Clube de Assinatura</h3>
+          <p class="muted">É um serviço onde a pessoa paga um valor fixo por mês (ou por período) para 
+            receber produtos ou conteúdos de forma contínua — como caixas surpresa, cursos, serviços digitais,
+            etc. Estratégias de aquisição São as ações para atrair novos assinantes, como anúncios, promoções, 
+            ofertas de teste grátis e comunicação clara sobre os benefícios.Estratégias de retenção São as práticas
+            para manter os assinantes por mais tempo, como boa experiência, conteúdos exclusivos, suporte rápido e
+            vantagens para quem permanece.Gestão de assinantes É o conjunto de processos para acompanhar quem assina, 
+            quem cancela, quem precisa de suporte, além de atualizar informações e oferecer planos diferentes.Infraestrutura
+            para cobrança recorrente São as ferramentas e sistemas que permitem cobrar automaticamente todo mês, emitir 
+            notas, controlar pagamentos, evitar falhas de cobrança e manter tudo funcionando sem complicações.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:  #0dcaf0">Parcerias</h3>
+          <p class="muted">No contexto de negócios digitais, Parcerias são colaborações estratégicas entre
+             empresas para oferecer produtos, serviços ou soluções melhores, mais completas e com maior alcance.
+             Programas Co-brand - Duas marcas aparecem juntas em um serviço ou produto. Exemplo: uma empresa de
+             tecnologia cria uma solução e coloca sua marca junto com a marca do parceiro que ajuda a distribuir 
+             ou vender. White-label - Uma empresa cria o produto, mas o parceiro pode usar a própria marca nele.
+             Exemplo simples: você compra uma plataforma pronta e vende como se fosse sua, com seu nome, suas cores
+             e sua identidade. Integrações com parceiros tecnológicos e comerciais Conectar sistemas ou serviços 
+             diferentes para funcionar juntos. Exemplo: integrar um sistema de pagamentos, uma plataforma de e-commerce
+             ou um ERP com o seu produto, oferecendo uma experiência completa para o cliente.</p>
+        </div>
+      </div>
+  </section>
+   <section id="sobre" class="about">
+     <h1>Sobre a EnonWeb  </h1><br>
+      <span> A EnonWeb Soluções Digitais é especialista em Transformação Digital para Empresas,
+         oferecendo  soluções completas e personalizadas 
+      </span>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Quem Somos </span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>Empresa especializada em soluções digitais, equipe de profissionais qualificados, experiência no
+          mercado digital, foco em resultados, atendimento personalizado e suporte continuo .</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Nossa Missão </span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>Transformar Negócios através da tecnologia, oferecer soluções digitais acessíveis, 
+          garantir resultados mensuráveis, promover inovação constante, facilitar o crescimento dos Clientes .</p>
+      </div>
+    </div>
+     <div class="faq-item">
+      <div class="faq-question">
+        <span>Nossa Valores </span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>Inovação, Qualidade, Compromisso, Transparência, Resultados, Parceria .</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+  
+ 
+    <footer style="margin-top:80px">
+      <div class="muted">© <span id="year"></span> EonWeb Soluções Digitais — Todos os direitos reservados.</div>
+    </footer>
+   
+</main>
+<!-- Banner de Cookies -->
+    <div id="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>Nós utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+                   <a href="politica-privacidade.html" class="cookie-link">Política de Privacidade</a>. 
+                 
+                </p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn settings-btn" onclick="openSettings()">Configurações</button>
+                <button class="cookie-btn reject-btn" onclick="rejectCookies()">Rejeitar</button>
+                <button class="cookie-btn accept-btn" onclick="acceptCookies()">Aceitar</button>
+            </div>
+        </div>
     </div>
 
- </footer>
-     <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5541997337026/?t=Olá%20Sou%20André%20Como%20Posso%20
-                 Ájuda%20-%20lo?%20Em%20Breve%20Vamos%20Atende%20-%20lo"></script>
-    <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="static/script.js"></script>
+    <!-- Modal de Configurações (Opcional) -->
+    <div id="cookie-settings" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.3); z-index: 1001;">
+        <h3>Configurações de Cookies</h3>
+        <div>
+            <input type="checkbox" id="necessary" checked disabled>
+            <label for="necessary">Cookies Necessários</label>
+        </div>
+        <div>
+            <input type="checkbox" id="analytics">
+            <label for="analytics">Cookies Analíticos</label>
+        </div>
+        <div>
+            <input type="checkbox" id="marketing">
+            <label for="marketing">Cookies de Marketing</label>
+        </div>
+        <button onclick="saveSettings()">Salvar Preferências</button>
+    </div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+            
+            let currentIndex = 0;
+            const totalItems = items.length;
+            let autoSlideInterval;
+            
+            // Função para atualizar o carrossel
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * (100 / totalItems)}%)`;
+                
+                // Atualizar indicadores
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Função para avançar para o próximo slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                updateCarousel();
+            }
+            
+            // Função para voltar ao slide anterior
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                updateCarousel();
+            }
+            
+            // Iniciar transição automática
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            // Parar transição automática
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+            
+            // Event listeners para os botões de navegação
+            nextBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                nextSlide();
+                startAutoSlide();
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                prevSlide();
+                startAutoSlide();
+            });
+            
+            // Event listeners para os indicadores
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', () => {
+                    stopAutoSlide();
+                    currentIndex = parseInt(indicator.getAttribute('data-index'));
+                    updateCarousel();
+                    startAutoSlide();
+                });
+            });
+            
+            // Pausar a transição automática quando o mouse estiver sobre o carrossel
+            document.querySelector('.carousel-container').addEventListener('mouseenter', stopAutoSlide);
+            document.querySelector('.carousel-container').addEventListener('mouseleave', startAutoSlide);
+            
+            // Iniciar o carrossel automático
+            startAutoSlide();
+        });
+ </script>    
+ <script>
+        // Verifica se já existe uma preferência salva
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!localStorage.getItem('cookies-accepted')) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem('cookies-accepted', 'true');
+            localStorage.setItem('cookies-settings', JSON.stringify({
+                necessary: true,
+                analytics: true,
+                marketing: true
+            }));
+            document.getElementById('cookie-banner').style.display = 'none';
+            // Aqui você pode adicionar os scripts de cookies
+        }
+
+        function rejectCookies() {
+            localStorage.setItem('cookies-accepted', 'false');
+            localStorage.setItem('cookies-settings', JSON.stringify({
+                necessary: true, // Cookies necessários sempre ativos
+                analytics: false,
+                marketing: false
+            }));
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+
+        function openSettings() {
+            document.getElementById('cookie-settings').style.display = 'block';
+            // Carrega as configurações salvas
+            const settings = JSON.parse(localStorage.getItem('cookies-settings') || '{}');
+            document.getElementById('analytics').checked = settings.analytics || false;
+            document.getElementById('marketing').checked = settings.marketing || false;
+        }
+
+        function saveSettings() {
+            const settings = {
+                necessary: true,
+                analytics: document.getElementById('analytics').checked,
+                marketing: document.getElementById('marketing').checked
+            };
+            
+            localStorage.setItem('cookies-settings', JSON.stringify(settings));
+            localStorage.setItem('cookies-accepted', settings.analytics || settings.marketing ? 'true' : 'false');
+            
+            document.getElementById('cookie-settings').style.display = 'none';
+            document.getElementById('cookie-banner').style.display = 'none';
+
+            // Aqui você pode ativar/desativar os cookies conforme as configurações
+        }
+    </script>
+ <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5541997337026/?t=Olá%20Sou%20André%20Como%20Posso%20 Ajuda%20-%20lo?%20Em%20Breve%20Vamos%20Atende%20-%20lo"></script>
+  
    
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function toggleMobile(){
+      // simples menu mobile: transforma nav em alert com links (substituir por menu real se desejar)
+      const links = ['Serviços:#servicos','Quem somos:#sobre','Contato:contato.html','Produtos:produtos.html','PDF:produtos.pdf','Orçamento:orcamento.html'];
+      const menu = links.map(l=>{
+        const [t,h]=l.split(':'); return `<div style="padding:8px 12px"><a href="${h}" onclick="document.querySelector('header').classList.remove('open')">${t}</a></div>`
+      }).join('');
+      const box = document.createElement('div');
+      box.style.position='fixed';box.style.right='18px';box.style.top='68px';box.style.background=' #F5F5DC';box.style.padding='8px';box.style.borderRadius='10px';box.style.zIndex=80;box.innerHTML=menu;
+      document.body.appendChild(box);
+      setTimeout(()=>box.remove(),6000);
+    }
+
+    function showToast(title,msg){
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMsg').textContent = msg;
+      document.getElementById('toast').classList.add('open');
+    }
+    function closeToast(){document.getElementById('toast').classList.remove('open')}
+
+    function handleContact(e){
+      e.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if(!nome||!email){showToast('Erro','Preencha nome e email.');return}
+      // Simular envio - aqui você integraria com backend ou serviço de email
+      showToast('Mensagem enviada','Obrigado, ' + nome + '. Responderemos em breve.');
+      e.target.reset();
+    }
+
+    function handleQuote(e){
+      e.preventDefault();
+      const empresa = document.getElementById('empresa').value.trim() || '—';
+      const serv = document.getElementById('servico').value;
+      const email = document.getElementById('orc_email').value.trim();
+      if(!email){showToast('Erro','Email é obrigatório para orçamento.');return}
+      showToast('Orçamento solicitado', `Recebemos sua solicitação para: ${serv}. Aguardamos enviar mais detalhes para ${email}.`);
+      e.target.reset();
+    }
+
+    function prefillDemo(){
+      document.getElementById('nome').value='João Silva';
+      document.getElementById('email').value='joao@exemplo.com';
+      document.getElementById('mensagem').value='Quero saber sobre serviço de E-commerce e integração com ERP.';
+    }
+
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach(question => {
+      question.addEventListener("click", () => {
+        const answer = question.nextElementSibling;
+        const arrow = question.querySelector(".arrow");
+
+        answer.classList.toggle("open");
+        arrow.classList.toggle("rotate");
+      });
+    });
+    
+  </script>
+
+
 
 </body>
 

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Produtos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a2a6c,black, #fdbb2d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .carousel {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.8s ease-in-out;
+        }
+        
+        .carousel-item {
+            width: 33.333%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            color: white;
+        }
+        
+        .carousel-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .carousel-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .carousel-indicator.active {
+            background: white;
+        }
+        
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        
+        .carousel-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .carousel-prev {
+            left: 15px;
+        }
+        
+        .carousel-next {
+            right: 15px;
+        }
+        
+        .description {
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-container {
+                height: 300px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .carousel-container {
+                height: 250px;
+            }
+            
+            h1 {
+                font-size: 1.7rem;
+            }
+            
+            .carousel-nav {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        
+        <h1 > <img  src="logo.jpg" alt="Sua Logo (coloque arquivo logo.png)" /> - EnonWeb Soluções Digitais - Linha de Produtos  
+             <a href="index.html" style="color: white;"><em style="color: #fdbb2d;">Voltar</em></a></h1>
+       
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="markentig.png" alt="landing page">
+                    <div class="carousel-caption">
+                        <h3>Markentig Digitsl</h3>
+                        <p>Landing Page  & Sites ( Funcilonalidade e Personalização</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="ads.png" alt="Carro de Luxo">
+                    <div class="carousel-caption">
+                        <h3>Anúncios Digitais</h3>
+                        <p>Google ADS ( Faça parte dp Google Meu Negócio)>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="app.png" alt="SUV Moderno">
+                    <div class="carousel-caption">
+                        <h3>Desenvolvimento de Aplicativos</h3>
+                        <p>Apps & Erps sobe Medida </p>
+                    </div>
+                </div>
+              
+            </div>
+            
+            <button class="carousel-nav carousel-prev">&#10094;</button>
+            <button class="carousel-nav carousel-next">&#10095;</button>
+            
+            <div class="carousel-controls">
+                <div class="carousel-indicator active" data-index="0"></div>
+                <div class="carousel-indicator" data-index="1"></div>
+                <div class="carousel-indicator" data-index="2"></div>
+              
+            </div>
+        </div>
+        
+        <div class="description">
+            <p>Este carrossel automático alterna entre três imagens 5 segundos. 
+                Você também pode navegar manualmente usando os botões laterais ou 
+                os indicadores na parte inferior.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+            
+            let currentIndex = 0;
+            const totalItems = items.length;
+            let autoSlideInterval;
+            
+            // Função para atualizar o carrossel
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * (100 / totalItems)}%)`;
+                
+                // Atualizar indicadores
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Função para avançar para o próximo slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                updateCarousel();
+            }
+            
+            // Função para voltar ao slide anterior
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                updateCarousel();
+            }
+            
+            // Iniciar transição automática
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            // Parar transição automática
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+            
+            // Event listeners para os botões de navegação
+            nextBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                nextSlide();
+                startAutoSlide();
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                prevSlide();
+                startAutoSlide();
+            });
+            
+            // Event listeners para os indicadores
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', () => {
+                    stopAutoSlide();
+                    currentIndex = parseInt(indicator.getAttribute('data-index'));
+                    updateCarousel();
+                    startAutoSlide();
+                });
+            });
+            
+            // Pausar a transição automática quando o mouse estiver sobre o carrossel
+            document.querySelector('.carousel-container').addEventListener('mouseenter', stopAutoSlide);
+            document.querySelector('.carousel-container').addEventListener('mouseleave', startAutoSlide);
+            
+            // Iniciar o carrossel automático
+            startAutoSlide();
+        });
+    </script>
+</body>
+</html>
